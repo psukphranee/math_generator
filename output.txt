@@ -1,0 +1,141 @@
+\documentclass[12pt]{article}
+\usepackage[tmargin=1.25in,lmargin=1in,rmargin=1in,bmargin=1in,paper=letterpaper]{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{fancyhdr, bbm, mathrsfs, enumerate, soul, amssymb, xcolor}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{amsthm}
+
+%%%%
+%Arrows
+\newcommand{\forward}{(\Rightarrow)}
+\newcommand{\backward}{(\Leftarrow)}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\lra}{\longrightarrow}
+\newcommand{\dra}{\Rightarrow}
+%Fancy Letters for Sets
+\newcommand{\Ri}{\mathcal{R}}
+\newcommand{\C}{\mathbbm{C}}
+\newcommand{\R}{\mathbbm{R}}
+\newcommand{\H}{\mathbbm{H}}
+\newcommand{\Q}{\mathbbm{Q}}
+\newcommand{\Z}{\mathbbm{Z}}
+\newcommand{\N}{\mathbbm{N}}
+\newcommand{\I}{\mathbbm{I}}
+\newcommand{\1}{\mathbbm{1}}
+\newcommand{\cC}{\mathcal{C}}
+\newcommand{\cO}{\mathcal{O}}
+\newcommand{\cF}{\mathcal{F}}
+\newcommand{\cU}{\mathcal{U}}
+\newcommand{\cH}{\mathcal{H}}
+\newcommand{\cT}{\mathcal{T}}
+\newcommand{\cB}{\mathcal{B}}
+\newcommand{\cS}{\mathcal{S}}
+\newcommand{\cP}{\mathcal{P}}
+%set theory
+\newcommand{\union}[2]{\bigcup\limits_{#1}^{#2}}
+\newcommand{\intersection}[2]{\bigcap\limits_{#1}^{#2}}
+\newcommand{\minus}{\backslash}
+%analysis/calculus
+\newcommand{\limas}[1]{\lim\limits_{#1}}
+\newcommand{\supas}[1]{\sup\limits_{#1}}
+\newcommand{\limsupas}[1]{\limsup\limits_{#1}}
+\newcommand{\intlim}[2]{\int_{#1}^{#2}}
+\newcommand{\p}[1]{\rho \left( #1 \right)}
+\newcommand{\inflim}[1]{\inf\limits_{#1}}
+\newcommand{\suplim}[1]{\sup\limits_{#1}}
+\newcommand{\del}{\partial}
+\newcommand{\mstar}[1]{m_{*}\pr{#1}}
+\newcommand{\gsigma}{G_{\sigma}}
+\newcommand{\fsigma}{F_{\sigma}}
+%algebraic
+\newcommand{\sumlim}[2]{\sum\limits_{#1}^{#2}}
+\newcommand{\prodlim}[2]{\prod\limits_{#1}^{#2}}
+\newcommand{\normal}{\trianglelefteq}
+%topology
+\newcommand{\norm}[1]{\lVert #1 \rVert}
+\newcommand{\ball}[2]{B_{#1}({#2})}
+\newcommand{\minlim}[1]{\min\limits_{#1}}
+\newcommand{\maxlim}[1]{\max\limits_{#1}}
+%grouping commands
+\newcommand{\pr}[1]{\left(#1\right)}
+\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand{\br}[1]{\left\{#1\right\}}
+\newcommand{\brck}[1]{\left[#1\right]}
+%other
+\newcommand{\exst}{\exists\:}
+\newcommand{\condition}[1]{\;\;\;\;\; #1}
+\newcommand{\inv}[1]{{#1}^{-1}}
+\newcommand{\by}{\times}
+\newcommand{\fa}{\;\forall\:}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\pe}{\phantom{-}}
+\newcommand{\vp}{\varphi}
+\newcommand{\orb}{\mathcal O}
+\newcommand{\acts}{\curvearrowright}
+\newcommand{\Aut}[1]{\text{Aut}(#1)}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\probref}[1]{\textbf{\Alph{hw}\ref{#1}}}
+\renewcommand{\ker}[1]{\text{ker}(#1)}
+
+
+\DeclareMathOperator{\tr}{tr}
+
+\newtheorem*{hint}{Hint}
+
+\theoremstyle{definition}
+
+\newtheorem*{defn}{Definition}
+
+
+\theoremstyle{remark}
+
+
+\newtheorem*{rem}{Remark}
+
+\begin{document}
+%
+\newcounter{probnum}
+\newenvironment{problems}
+   {\begin{list}{{\bf \arabic{probnum}:}}%
+       {\setlength\labelwidth{.25in}%
+         \setlength\leftmargin{0in}%
+         \setlength\itemsep{\parsep}%
+         \usecounter{probnum}}}%
+   {\end{list}}
+%
+\renewcommand{\theenumi}{\alph{enumi}}
+\renewcommand{\labelenumi}{(\theenumi)}
+\renewcommand{\theenumii}{\arabic{enumii}}
+\renewcommand{\labelenumii}{(\theenumii)}
+%
+\parindent=0pt
+\parskip = 10pt
+%% HEADER & FOOTER %%
+\pagestyle{fancy}
+%% HW NUMBER %%
+\newcounter{hw}
+\setcounter{hw}{2}
+%% HEADER %%
+\lhead{Trigonemtric Identities}
+\rhead{Panya Sukphranee}
+\chead{\bf MATH 198}
+\cfoot{Page \thepage}
+
+\begin{problems}
+
+    \item $\dfrac{\sec \theta}{\csc \theta}+\dfrac{\sin \theta}{\cos \theta}=2 \tan \theta$
+
+\item $1-\dfrac{\sin ^2 \theta}{1+\cos \theta}=\cos \theta$
+
+\item $\dfrac{\sin ^2 \theta-\tan \theta}{\cos ^2 \theta-\cot \theta}=\tan ^2 \theta$
+
+\item $\sec ^4 \theta-\sec ^2 \theta=\tan ^4 \theta+\tan ^2 \theta$
+
+\item $\cos ^2 \theta\left(1+\tan ^2 \theta\right)=1$
+
+    
+\end{problems} 
+     
+\end{document}

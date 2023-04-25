@@ -1,0 +1,21 @@
+import random
+import sys
+
+
+def main():
+
+    filename = 'Text Files/template.tex'
+
+    # Open the file and read the lines
+    with open(filename, 'r') as file:
+        lines = file.readlines()
+
+    INSERT_HERE
+    
+    #debug
+    print(lines)
+    
+    
+
+if __name__ == "__main__":
+    main()
